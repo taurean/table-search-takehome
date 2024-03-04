@@ -1,0 +1,10 @@
+:root {
+  /* Spacing */
+  --space-1: calc(4 / var(--root-text-size) * 1rem); /* 4px */
+  --space-2: calc(8 / var(--root-text-size) * 1rem); /* 8px */
+  --space-3: calc(12 / var(--root-text-size) * 1rem); /* 12px */
+  --space-4: calc(20 / var(--root-text-size) * 1rem); /* 20px */
+  --space-5: calc(24 / var(--root-text-size) * 1rem); /* 24px */
+  --space-6: calc(32 / var(--root-text-size) * 1rem); /* 32px */
+  --space-7: calc(60 / var(--root-text-size) * 1rem); /* 60px */
+}

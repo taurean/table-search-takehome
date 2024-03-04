@@ -1,0 +1,5 @@
+.tableDataCell {
+  padding-block: var(--space-5);
+  font-size: var(--txt-size-0);
+  padding-inline: var(--space-2);
+}

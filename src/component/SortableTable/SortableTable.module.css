@@ -1,0 +1,37 @@
+.sortableTable {
+  display: inline-block;
+  border-block: 1px solid var(--salt-400);
+  width: 100%;
+}
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.pagination {
+  background-color: var(--salt-200);
+  border-block-start: 1px solid var(--salt-400);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-2);
+
+  select {
+    margin-inline-end: var(--space-3);
+  }
+}
+
+.pageSizeSelection {
+  display: inline-flex;
+  text-transform: lowercase;
+  align-items: center;
+
+  label {
+    order: 2;
+  }
+}
+
+.tableSelectItem {
+  text-transform: capitalize;
+}

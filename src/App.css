@@ -1,2 +1,83 @@
 .App {
+  background-color: var(--salt-100);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tableSearchForm {
+  margin-block: var(--space-5);
+}
+
+.appContent {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.tableSearchForm {
+  text-align: center;
+}
+
+.searchLabel {
+  display: block;
+}
+
+.inputSearch {
+  padding: var(--space-3);
+  padding-inline-start: var(--space-6);
+  background-color: var(--salt-300);
+  border: 0;
+  border-radius: 4px;
+  font-size: var(--txt-size-0);
+  caret-color: var(--kale-800);
+  width: 100%;
+  display: inline-block;
+
+  &:focus {
+    background-color: var(--kale-100);
+    outline: none;
+  }
+}
+
+.inputSearchIcon {
+  display: inline-block;
+  margin-right: calc(var(--space-5) * -1);
+  z-index: 10;
+  width: 20px;
+  fill: var(--salt-700);
+}
+
+@keyframes borderAnimationDemo {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.inputWrapper {
+  position: relative;
+  min-width: calc(400px);
+  display: inline-flex;
+
+  &:after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: var(--salt-700);
+    width: calc(100% + 6px);
+    height: 2px;
+    left: -6px;
+    bottom: 0;
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+.inputWrapper:focus-within:after {
+  animation: borderAnimationDemo 500ms ease forwards;
+  background-color: var(--kale-800);
+  height: 3px;
 }

@@ -1,0 +1,44 @@
+:root {
+  /*
+    * salt
+    Text and border colors, drop-shadows and other interface components use Salt. We’ve designed this palette to be accessible for text with salt-800 and above.
+  */
+  --salt-100: #ffffff; /* Backgrounds, primary/destructive CTA text */
+  --salt-200: #fbfafa; /* Table headers, general purpose backgrounds */
+  --salt-300: #f4f4f3; /* Input backgrounds, step headers */
+  --salt-400: #eaeaea; /* Dividers */
+  --salt-500: #dcdcdc; /* All other borders, disabled button bg */
+  --salt-600: #bababc; /* Disabled icons */
+  --salt-700: #919197; /* Form/input borders, navigation icons */
+  --salt-800: #6c6c72; /* Default Step Header titles, Step List subtitles */
+  --salt-900: #525257; /* Body text, Info Alert/Toast border */
+  --salt-1000: #1c1c1c; /* Headers, titles, labels */
+  /*
+    * kale
+    Kale is the color we use to signify that an element is clickable or has a selected state. Card is one example of this as you hover over them.
+   */
+  --kale-100: #f7fcfc; /* Some specific backgrounds */
+  --kale-400: #2babad; /* Used for non-functional UI elements */
+  --kale-500: #0a8080; /* Default clickable color, Success Alert/Toast border */
+  --kale-800: #005961; /* Link and Primary Button hover background color */
+  /*
+    * guava
+    Guava is used for thematic/navigational elements in our interface.
+  */
+  --guava-100: #fff3ef; /* Some specific backgrounds */
+  --guava-500: #f45d48; /* Active tab + nav icon, progress bar */
+  /* 
+    * warning
+    To communicate to users that something requires their immediate attention.
+  */
+  --warning-100: #fffaf2; /* Warning Alert background */
+  --warning-500: ##e9b550;
+  --warning-700: ##b88023; /* Warning Alert/Tag border */
+  /*
+    * danger
+    These are reserved for times when something important is missing or for irreversible or destructive actions.
+  */
+  --danger-100: #fff7f5; /* Danger (aka error) alert, Invalid form field bg */
+  --danger-500: #d5351f; /* Danger (error) link/Button/icon, error text, error alert border */
+  --danger-800: #b41d08; /* Destructive link/CTA/icon bg on hover */
+}

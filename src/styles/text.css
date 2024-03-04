@@ -1,0 +1,21 @@
+:root {
+  --root-text-size: 16; /* this is used indirectly to calc other text sizes, assuming root text size is 100% */
+  /* * text sizes */
+  --txt-size--2: calc(12 / var(--root-text-size) * 1rem); /* 12px */
+  --txt-size--1: calc(14 / var(--root-text-size) * 1rem); /* 14px */
+  --txt-size-0: calc(16 / var(--root-text-size) * 1rem); /* 16px */
+  --txt-size-1: calc(18 / var(--root-text-size) * 1rem); /* 18px */
+  --txt-size-2: calc(20 / var(--root-text-size) * 1rem); /* 20px */
+  --txt-size-3: calc(24 / var(--root-text-size) * 1rem); /* 24px */
+  --txt-size-4: calc(32 / var(--root-text-size) * 1rem); /* 32px */
+  /* * line heights */
+  --txt-lh-tight: 1.3;
+  --txt-lh-normal: 1.4;
+  --txt-lh-wide: 1.5;
+  /* * text weight */
+  --txt-wgt-book: 400;
+  --txt-wgt-medium: 600;
+  /* * letter spacing */
+  --txt-ltrSpace-tight: 0.01em;
+  --txt-ltrSpace-wide: 0.02em;
+}

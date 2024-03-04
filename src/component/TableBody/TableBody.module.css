@@ -1,0 +1,3 @@
+.tableBody tr + tr {
+  border-block-start: 1px solid var(--salt-400);
+}

@@ -1,0 +1,68 @@
+/* text styles */
+.u\:txt-small-100 {
+  font-size: var(--txt-size--2);
+  font-weight: var(--txt-wgt-book);
+  letter-spacing: var(--txt-ltrSpace-wide);
+  line-height: var(--txt-lh-tight);
+}
+
+.u\:txt-small-125 {
+  font-size: var(--txt-size--2);
+  font-weight: var(--txt-wgt-medium);
+  letter-spacing: var(--txt-ltrSpace-wide);
+  line-height: var(--txt-lh-tight);
+}
+
+.u\:txt-byline-200 {
+  font-size: var(--txt-size--1);
+  font-weight: var(--txt-wgt-book);
+  letter-spacing: var(--txt-ltrSpace-wide);
+  line-height: var(--txt-lh-normal);
+}
+
+.u\:txt-byline-225 {
+  font-size: var(--txt-size--1);
+  font-weight: var(--txt-wgt-medium);
+  letter-spacing: var(--txt-ltrSpace-wide);
+  line-height: var(--txt-lh-normal);
+}
+
+.u\:txt-paragraph-300 {
+  font-size: var(--txt-size-0);
+  font-weight: var(--txt-wgt-book);
+  letter-spacing: var(--txt-ltrSpace-wide);
+  line-height: var(--txt-lh-wide);
+}
+
+.u\:txt-paragraph-325 {
+  font-size: var(--txt-size-0);
+  font-weight: var(--txt-wgt-medium);
+  letter-spacing: var(--txt-ltrSpace-wide);
+  line-height: var(--txt-lh-wide);
+}
+
+.u\:txt-heading-425 {
+  font-size: var(--txt-size-1);
+  font-weight: var(--txt-wgt-medium);
+  letter-spacing: var(--txt-ltrSpace-tight);
+  line-height: var(--txt-lh-tight);
+}
+
+.u\:txt-heading-525 {
+  font-size: var(--txt-size-2);
+  font-weight: var(--txt-wgt-medium);
+  letter-spacing: var(--txt-ltrSpace-tight);
+  line-height: var(--txt-lh-normal);
+}
+
+.u\:txt-heading-625 {
+  font-size: var(--txt-size-3);
+  font-weight: var(--txt-wgt-medium);
+  line-height: var(--txt-lh-tight);
+}
+
+.u\:txt-heading-725 {
+  font-size: var(--txt-size-4);
+  font-weight: var(--txt-wgt-medium);
+  line-height: var(--txt-lh-tight);
+}

@@ -1,0 +1,34 @@
+.button {
+  border: 0;
+  background-color: transparent;
+  outline: 2px solid transparent;
+  display: inline-flex;
+  padding: var(--space-3);
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  font-size: var(--txt-size-1);
+
+  & .icon {
+    fill: var(--salt-800);
+    width: 1em;
+    height: 1em;
+  }
+
+  &[disabled] .icon {
+    fill: var(--salt-600);
+  }
+
+  &:hover {
+    background-color: var(--salt-400);
+  }
+
+  &[disabled]:hover {
+    background-color: transparent;
+    cursor: not-allowed;
+  }
+
+  &:focus-visible {
+    outline-color: var(--salt-1000);
+  }
+}
