@@ -103,6 +103,16 @@ const App = () => {
 
   return (
     <div className="App">
+      <aside>
+        <p>
+          This was a takehome project while interviewing for a front-end
+          position on a design system team. You can view the{" "}
+          <a href="https://github.com/taurean/table-search-takehome">
+            public repo on github
+          </a>{" "}
+          for more info.
+        </p>
+      </aside>
       <header className="appHeader">
         <h1 className="u:txt-heading-725">City List</h1>
       </header>
