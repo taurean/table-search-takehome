@@ -1,25 +1,29 @@
 # Take-home Exercise: Sortable Table
 
-👋 Hello! Thanks so much for taking part in our interview process! We know that it takes time and effort away from other things, and we appreciate it.
+Hello there! We really appreciate your willingness to take on this coding challenge. We understand that preparing these projects can take time and effort away from other priorities, so thank you for your participation.
 
-We set this exercise up for a couple of reasons that we hope resonate with you:
-1. We think that a 1-hour window into coding a single problem is only going to provide us with a narrow view of your skills; and we get it – the extra pressure of trying to solve some gotcha-type of question doesn't do anyone justice, either
-2. We want to mimic an experience as close as possible to what you'd be doing on a day-to-day basis as a Frontend Engineer here at Gusto – reading through requirements, debating different approaches and putting up a PR for review 🙌
+We’ve designed this exercise for a couple of reasons:
 
-This question is scoped down to what we think can be tackled in 4 hours or less, but otherwise, the requirements listed below, the designs provided alongside those and the process is very similar to what you could expect from working at Gusto.
+1. We believe that a short live-coding session only reveals a sliver of your capabilities. We also know that “on-the-spot” problem-solving under time pressure isn’t always the best way to showcase your true skill set.
+2. We want to offer a realistic scenario similar to what you might experience in a day-to-day frontend engineering role—reviewing requirements, weighing different approaches, and submitting a pull request.
 
-This exercise is very important in assessing your technical fit, so make sure you're happy with the result and that it reflects your skills. Your submission should be something you would be proud to submit on the job. Please commit your changes to a new branch in this repo, and once you're happy with the result, create a pull request with a description of your changes.
+Our goal is for this assignment to be completable in around four hours or less. The requirements below, the accompanying design references, and the overall process are quite similar to what you’d experience in a typical frontend team setting.
 
-**When you're done, please email your recruiter a link to your PR.**
+Your submission holds significant weight in evaluating your technical fit. Make sure you’re satisfied with how it reflects your skills—treat it as if it were going into production. Please commit your work to a new branch in this repository. Once you’re ready, open a pull request describing your changes.
 
-Your changes will be graded based on adherence to product and design requirements, performance, browser support, code readability and organization, error handling, lack of defects, and documentation. We'll get back to you within a week of your submission with the outcome. Please note that we will not provide you with detailed feedback on the exercise.
+**When you’re done, please send a link to your pull request to the person who provided you with this assessment.**
 
-**We've provided some code to get you started, though there are a few bugs in there that you'll have to deal with first.** Let us know if you have any questions. Good luck! 🍀
+Your work will be assessed based on how well you follow the product and design requirements, performance, browser compatibility, code readability, organization, error handling, overall quality, and documentation. We will let you know the outcome within a week. Please note we do not provide detailed feedback on the exercise.
 
-For reference, we use the following tech stack for this exercise:
-* [TypeScript](https://www.typescriptlang.org)
-* [React](https://reactjs.org)
-* [Jest](https://jestjs.io)
+**We’ve included a small starter codebase that contains a few bugs that you’ll need to address.** If you have questions, let us know. Good luck!
+
+For reference, the technology stack for this exercise is:
+
+- [TypeScript](https://www.typescriptlang.org)
+- [React](https://reactjs.org)
+- [Jest](https://jestjs.io)
+
+---
 
 ## Available Scripts
 
@@ -27,70 +31,78 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in development mode.  
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+The page will automatically reload if you make edits, and you’ll see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the test suite in interactive watch mode.  
+For more information, consult the [official Create React App documentation](https://facebook.github.io/create-react-app/docs/running-tests).
 
-# Product requirements :books:
+---
 
-**Note:** These product requirements are created in loosely the same style you would see internally at Gusto, but the problem statement and goals were made up for this exercise.
+# Product Requirements :books:
+
+**Note:** These product requirements are inspired by real-world specs, though the details were created for this exercise.
 
 ## The Problem
-Often enough, Gusto users need to deal with large sets of data – in this exercise, that would be a list of the cities of the world.
-We are looking to offer a delightful user experience when it comes to searching, sorting, and navigating through such datasets.
 
-<img src="https://user-images.githubusercontent.com/9911645/171285680-74d420e9-faff-439d-929d-923f8b699c51.png" width="800px" />
+The feature you’re building focuses on displaying and interacting with large datasets—in this case, a list of cities around the globe. The goal is to offer a polished user experience for searching, sorting, and navigating through these entries.
 
-In this exercise, we'll be focusing on these elements of your implementation:
-* The reusability/flexibility of the `<SortableTable>` component (or set of components) you'll be coding up
-* The user interface and user experience of your app:
-  * Visual design
-  * Navigation and Accessibility
-  * Performance
+![Design screenshot for reference](https://user-images.githubusercontent.com/9911645/171285680-74d420e9-faff-439d-929d-923f8b699c51.png)
 
-## User-focused Requirements
+We’ll be looking at:
+
+- How flexible or reusable your `<SortableTable>` (or equivalent) component(s) are.
+- The overall user interface and user experience:
+  - Visual design
+  - Navigation & accessibility
+  - Performance
+
+## User-Focused Requirements
 
 ### Search
-* [x] :star: **P0**: As a user, I want to search for cities by city name
-* [x] :star: **P0**: As a user, I want to search for cities by country name
-* [ ] :star: **P0**: As a user, I should know when a search is pending
-* [ ] :star: **P0**: As a user, I should know when a search does not match any city
-* [ ] :star: **P0**: As a user, I should know when a search fails (**Note: if you search for 'error', we mimic an error for you :raised_hands:**)
-* [ ] P1: [Performance] As a user, I want the search to only kick in after 150ms since my last change to the search term
+
+- [x] :star: **P0**: Users must be able to search for cities by their city name.
+- [x] :star: **P0**: Users must be able to search for cities by their country name.
+- [x] :star: **P0**: Users need a visual indication that the search is in progress.
+- [x] :star: **P0**: Users should see a message when no search results match their query.
+- [x] :star: **P0**: Users should be informed when there’s a search error (**Hint: searching for “error” simulates a backend failure**).
+- [x] **P1**: [Performance] Searches should only be triggered 150ms after the user stops typing.
 
 ### Sorting
-* [ ] :star: **P0**: As a user, I want to be able to toggle sorting (ascending) the search results by a single column
-* [ ] **P1**: As a user, I want to be able to toggle between ascending, descending, or no sorting of the search results by a single column
-* [ ] **P2**: As a user, I want to be able to toggle between ascending, descending, or no sorting of the search results by multiple columns
+
+- [x] :star: **P0**: Users must be able to toggle ascending sort on a single column.
+- [x] **P1**: Users should be able to toggle ascending, descending, or no sort on a single column.
+- [ ] **P2**: Users should be able to manage ascending/descending/no-sort on multiple columns simultaneously.
 
 ### Pagination
-* [ ] :star: **P0**: As a user, I want to be able to paginate through search results using a fixed page size (10)
-* [ ] :star: **P0**: As a user, I want to be able to navigate between result pages
-* [ ] **P2**: As a user, I want to be able to paginate through search results using a dynamic page size
-* [ ] **P3**: As a user, I want to be able to go all the way to the first and last pages of the search results
+
+- [x] :star: **P0**: Users can paginate through search results, with a fixed page size of 10.
+- [x] :star: **P0**: Users can move between pages of results.
+- [x] **P2**: Users can adjust the page size dynamically.
+- [x] **P3**: Users can jump directly to the first or last page of the results.
 
 ### Accessibility
-* [ ] **P1**: As a user, I want to be able to navigate the page using only a keyboard
-* [ ] **P3**: As a user, I want to be able to use a screen reader to know about dynamic content updates for sorting, pagination, errors, and search
+
+- [x] **P1**: Users can navigate the table solely via keyboard.
+- [ ] **P3**: Screen reader users should be alerted to dynamic content changes related to sorting, pagination, errors, and search results.
 
 ### Design
 
-*For reference, you can use the screenshot in the problem statement above. We've also uploaded some icons you might want to use for your implementation – you can find these under src/assets/..* :pray:
+_There is a reference screenshot above, plus some icons in the `src/assets` folder you might want to use._
 
-* [ ] :star: **P0**: As a Gusto engineer, when I use `<SortableTable>`, its design matches Gusto's default design
-* [ ] **P2**: As a Gusto engineer, I can theme the `<SortableTable>` component with my own visual design
-* [ ] **P3**: As a user, I can view the search results on a narrow screen
+- [x] :star: **P0**: The `<SortableTable>` component should match the provided default design.
+- [ ] **P2**: It should be possible to theme `<SortableTable>` with an alternative visual style.
+- [ ] **P3**: The layout should adapt appropriately for narrow screens.
 
-## Open questions
+---
 
-* How many columns do we want to support?
-* How complicated would it be to allow users to change the columns' order? :thinking_face:
-* Can we make it easy to hide/show columns?
-* Support for checkbox columns, single/multi-selection in the table?
+## Open Questions
+
+- How many columns do we want to support in total?
+- Could we allow users to reorder columns?
+- Would it be beneficial to enable show/hide toggles for columns?
+- How about adding support for checkbox columns or single/multi-selection?
